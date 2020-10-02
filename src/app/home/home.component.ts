@@ -16,6 +16,7 @@ export class HomeComponent {
         this.userService.getAll().pipe(first()).subscribe(users => {
             this.loading = false;
             this.users = users;
+            console.log(this.users)
         });
     }
 }
